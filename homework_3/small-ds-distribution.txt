@@ -1,0 +1,9 @@
+             train    test  validation   total
+Benign      611049  122060       30416  763525
+DDoS        145059   29080        7342  181481
+DoS          47272    9583        2378   59233
+Mirai        19598    3892         986   24476
+Recon         8850    1750         453   11053
+Spoofing      6337    1277         331    7945
+Web            439      77          22     538
+BruteForce     256      53          15     324
