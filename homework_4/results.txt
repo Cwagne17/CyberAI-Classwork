@@ -1,0 +1,96 @@
+Using the following distribution achieved the following.
+
+             train    test  validation   total
+Benign      610662  122256       30607  763525
+DDoS        145294   28949        7238  181481
+DoS          47375    9503        2355   59233
+Mirai        19559    3964         953   24476
+Recon         8918    1691         444   11053
+Spoofing      6366    1269         310    7945
+Web            434      83          21     538
+BruteForce     252      57          15     324
+
+Mean Squared Error (MSE): 0.9070524739545222
+
+With Autoencoder
+
+              precision    recall  f1-score   support
+
+      Benign     0.8498    0.8978    0.8732      3964
+        DDoS     0.9990    0.9997    0.9993    122256
+         DoS     0.9992    0.9969    0.9981     28949
+       Mirai     0.9985    0.9996    0.9991      9503
+       Recon     0.6524    0.6950    0.6730      1269
+    Spoofing     0.7767    0.6889    0.7302      1691
+         Web     0.0000    0.0000    0.0000        83
+  BruteForce     0.0000    0.0000    0.0000        57
+
+    accuracy                         0.9905    167772
+   macro avg     0.6595    0.6597    0.6591    167772
+weighted avg     0.9898    0.9905    0.9901    167772
+
+Without Autoencoder
+
+              precision    recall  f1-score   support
+
+      Benign     0.7253    0.9667    0.8288      3964
+        DDoS     0.9968    0.9993    0.9980    122256
+         DoS     0.9975    0.9882    0.9928     28949
+       Mirai     0.9968    0.9926    0.9947      9503
+       Recon     0.7239    0.5516    0.6261      1269
+    Spoofing     0.8923    0.4264    0.5770      1691
+         Web     0.0000    0.0000    0.0000        83
+  BruteForce     0.0000    0.0000    0.0000        57
+
+    accuracy                         0.9863    167772
+   macro avg     0.6666    0.6156    0.6272    167772
+weighted avg     0.9865    0.9863    0.9851    167772
+
+
+
+
+
+
+
+Using the following distribution without Webbased and BruteForce
+
+           train    test  validation   total
+Benign    611108  121883       30534  763525
+DDoS      144999   29199        7283  181481
+DoS        47295    9583        2355   59233
+Mirai      19583    3926         967   24476
+Recon       8809    1766         478   11053
+Spoofing    6376    1277         292    7945
+
+Mean Squared Error (MSE): 0.9945480963002441
+
+With Autoencoder
+
+              precision    recall  f1-score   support
+
+      Benign     0.7721    0.9743    0.8615      3926
+        DDoS     0.9990    0.9996    0.9993    121883
+         DoS     0.9991    0.9968    0.9980     29199
+       Mirai     0.9984    0.9990    0.9987      9583
+       Recon     0.8613    0.5153    0.6448      1277
+    Spoofing     0.8713    0.6093    0.7171      1766
+
+    accuracy                         0.9907    167634
+   macro avg     0.9168    0.8490    0.8699    167634
+weighted avg     0.9912    0.9907    0.9901    167634
+
+
+Without Autoencoder
+
+              precision    recall  f1-score   support
+
+      Benign     0.7559    0.9356    0.8362      3926
+        DDoS     0.9981    0.9984    0.9983    121883
+         DoS     0.9947    0.9940    0.9943     29199
+       Mirai     0.9961    0.9897    0.9929      9583
+       Recon     0.7271    0.5842    0.6479      1277
+    Spoofing     0.8012    0.5136    0.6259      1766
+
+    accuracy                         0.9874    167634
+   macro avg     0.8789    0.8359    0.8492    167634
+weighted avg     0.9876    0.9874    0.9869    167634
